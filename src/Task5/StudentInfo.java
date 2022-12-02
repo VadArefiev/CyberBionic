@@ -23,7 +23,7 @@ public class StudentInfo {
 
     @Override
     public String toString() {
-        return  name +
+        return name +
                 ", " + grade +
                 ", numberTicket=" + numberTicket +
                 ", yearEduc=" + yearEduc +
