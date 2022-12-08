@@ -1,5 +1,7 @@
 package Task5;
 
+import Task3.Author;
+
 public class StudentTest {
     public static void main(String[] args) {
         StudentInfo stud1 = new StudentInfo(
@@ -19,6 +21,7 @@ public class StudentTest {
         for (StudentInfo student : students) {
             System.out.println(student);
             System.out.println(student.getGrade().average(student));
+
 
         }
     }

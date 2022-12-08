@@ -3,14 +3,14 @@ package Task5;
 public class StudentInfo {
     private final Name name;
     public Grade grade;
-    private final int numberTicket;
-    private final int yearEduc;
+    private final int id;
+    private final int course;
 
-    public StudentInfo(Name name, Grade grade, int numberTicket, int yearEduc) {
+    public StudentInfo(Name name, Grade grade, int id, int course) {
         this.name = name;
         this.grade = grade;
-        this.numberTicket = numberTicket;
-        this.yearEduc = yearEduc;
+        this.id = id;
+        this.course = course;
     }
 
     public Name getName() {
@@ -25,8 +25,8 @@ public class StudentInfo {
     public String toString() {
         return name +
                 ", " + grade +
-                ", numberTicket=" + numberTicket +
-                ", yearEduc=" + yearEduc +
+                ", numberTicket=" + id +
+                ", yearEduc=" + course +
                 '}';
     }
 }
