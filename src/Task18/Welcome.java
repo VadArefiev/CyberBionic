@@ -11,7 +11,8 @@ public class Welcome {
         HashMap<String, String> lang = new HashMap<>();
         lang.put("english", "Welcome");
         lang.put("czech", "Vitejte");
-        lang.put("danish", "Welkom");
+        lang.put("danish", "Velkomst");
+        lang.put("dutch", "Welkom");
         lang.put("estonian", "Tere tulemast");
         lang.put("finnish", "Tervetuloa");
         lang.put("flemish", "Welgekomen");
