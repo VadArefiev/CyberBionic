@@ -4,7 +4,7 @@ import java.util.HashMap;
 
 public class Welcome {
     public static void main(String[] args) {
-
+        System.out.println(greet("finnish"));
     }
 
     public static String greet(String language) {
