@@ -7,7 +7,7 @@ import java.util.List;
 public class Sum {
     public static void main(String[] args) {
         System.out.println(GetSum(8, 1));
-        System.out.println(nbDig(10, 1));
+        System.out.println(nbDig(5, 2));
     }
 
     public static int GetSum(int a, int b) {
@@ -30,23 +30,20 @@ public class Sum {
 
 
     public static int nbDig(int n, int d) {
-        List list = new ArrayList();
-        int sum = 0;
-        if(n >= 0){
-            for(int i = 0; i <= n; i++){
-                list.add(i*i);
-            }
-            char[] arr = list.toString().toCharArray();
-            for(Object s: arr){
-                if(s.toString().contains(Integer.toString(d))){
-                    sum += 1;
-                }
+        List<Integer>list = new ArrayList<>();
+        int count = 0;
+        for (int i = 0; i <= n; i++) {
+            list.add(i * i);
+        }
+        char[] chars = list.toString().toCharArray();
+        for (Object c : chars) {
+            if (c.toString().contains((Integer.toString(d)))) {
+                count += 1;
             }
         }
-        return sum;
-            }
-        }
-
+        return count;
+    }
+}
 
 
 
